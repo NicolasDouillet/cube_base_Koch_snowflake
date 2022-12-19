@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>cubic_base_Koch_snowflake</title><meta name="generator" content="MATLAB 9.7"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2020-11-18"><meta name="DC.source" content="doc.m"><style type="text/css">
+      --><title>cube_base_Koch_snowflake</title><meta name="generator" content="MATLAB 9.7"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2022-12-19"><meta name="DC.source" content="doc.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -66,58 +66,58 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 
 
 
-  </style></head><body><div class="content"><h1>cubic_base_Koch_snowflake</h1><!--introduction--><p>Function to compute, display, and save the cubic base 3D Koch snowflake at any iteration / depth level.</p><p>Author &amp; support : nicolas.douillet (at) free.fr, 2019-2020.</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Syntax</a></li><li><a href="#2">Description</a></li><li><a href="#3">See also</a></li><li><a href="#4">Input arguments</a></li><li><a href="#5">Output arguments</a></li><li><a href="#6">Example #1</a></li><li><a href="#7">Example #2</a></li></ul></div><h2 id="1">Syntax</h2><p>cubic_base_Koch_snowflake;</p><p>cubic_base_Koch_snowflake(nb_it);</p><p>cubic_base_Koch_snowflake(nb_it, printable_ready);</p><p>cubic_base_Koch_snowflake(nb_it, printable_ready, option_display);</p><p>[V, T] = cubic_base_Koch_snowflake(nb_it, printable_ready, option_display);</p><h2 id="2">Description</h2><p>cubic_base_Koch_snowflake computes and displays the 3- cubic base 3D Koch snowflake included in the unit sphere.</p><p>cubic_base_Koch_snowflake(nb_it) computes and displays the nb_it cubic base 3D Koch snowflake included in the unit sphere.</p><p>cubic_base_Koch_snowflake(nb_it, printable_ready) prevents from creating non manifold edges when printable_ready is set to true / logical 1, and remove duplicated vertices and faces when it is set to *false / logical 0. In this latter case, the model is lighter (less vertices, less faces), but at the cost of non manifoldness.</p><p>cubic_base_Koch_snowflake(nb_it, printable_ready, option_display) displays it when option_display is set to logical *true/1 (default), and doesn't when it is set to  logical false/0.</p><p>[V,T] = cubic_base_Koch_snowflake(nb_it, printable_ready, option_display) saves the resulting vertex coordinates in the array V, and the triangulation in the array T.</p><h2 id="3">See also</h2><p><a href="https://fr.mathworks.com/matlabcentral/fileexchange/73247-n-level-3d-koch-snowflake">Koch_snowflake</a> | <a href="https://fr.mathworks.com/matlabcentral/fileexchange/73447-n-level-3d-sierpinski-menger-sponge">Sierpinski_Menger_sponge</a></p><h2 id="4">Input arguments</h2><p>- nb_it : positive integer scalar double, the number of iterations / depth level.</p><p>- printable_ready : either logical, true/*false or numeric 1/*0.</p><p>- option_display : either logical, *true/false or numeric *1/0.</p><h2 id="5">Output arguments</h2><pre>      [ |  |  |]
+  </style></head><body><div class="content"><h1>cube_base_Koch_snowflake</h1><!--introduction--><p>Function to compute, display, and save the cube base 3D Koch snowflake at any iteration.</p><p>Author &amp; support : nicolas.douillet (at) free.fr, 2019-2022.</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Syntax</a></li><li><a href="#2">Description</a></li><li><a href="#3">See also</a></li><li><a href="#4">Input arguments</a></li><li><a href="#5">Output arguments</a></li><li><a href="#6">Example #1</a></li><li><a href="#7">Example #2</a></li></ul></div><h2 id="1">Syntax</h2><p>cube_base_Koch_snowflake;</p><p>cube_base_Koch_snowflake(nb_it);</p><p>cube_base_Koch_snowflake(nb_it, printable_ready);</p><p>cube_base_Koch_snowflake(nb_it, printable_ready, option_display);</p><p>[V, T] = cube_base_Koch_snowflake(nb_it, printable_ready, option_display);</p><h2 id="2">Description</h2><p>cube_base_Koch_snowflake computes and displays the 3- cube base 3D Koch snowflake included in the unit sphere.</p><p>cube_base_Koch_snowflake(nb_it) computes and displays the nb_it cube base 3D Koch snowflake included in the unit sphere.</p><p>cube_base_Koch_snowflake(nb_it, printable_ready) prevents from creating non manifold edges when printable_ready is set to true / logical 1, and remove duplicated vertices and faces when it is set to *false / logical 0. In this latter case, the model is lighter (less vertices, less faces), but at the cost of non manifoldness.</p><p>cube_base_Koch_snowflake(nb_it, printable_ready, option_display) displays it when option_display is set to logical *true/1 (default), and doesn't when it is set to  logical false/0.</p><p>[V,T] = cube_base_Koch_snowflake(nb_it, printable_ready, option_display) saves the resulting vertex coordinates in the array V, and the triangulation in the array T.</p><h2 id="3">See also</h2><p>| <a href="https://fr.mathworks.com/matlabcentral/fileexchange/73247-n-level-3d-koch-snowflake">Koch_snowflake</a> |   <a href="https://fr.mathworks.com/matlabcentral/fileexchange/73447-n-level-3d-sierpinski-menger-sponge">Sierpinski_Menger_sponge</a> |</p><h2 id="4">Input arguments</h2><p>- nb_it : positive integer scalar double, the number of iterations / depth level.</p><p>- printable_ready : either logical, true/*false or numeric 1/*0.</p><p>- option_display : either logical, *true/false or numeric *1/0.</p><h2 id="5">Output arguments</h2><pre>      [ |  |  |]
 - V = [Vx Vy Vz], real matrix double, the vertex coordinates. Size(V) = [nb_vertices,3].
       [ |  |  |]</pre><pre>      [ |  |  |]
 - T = [T1 T2 T3], positive integer matrix double, the triangulation. Size(T) = [nb_triangles,3].
-      [ |  |  |]</pre><h2 id="6">Example #1</h2><p>Computes and displays the cubic base 3D Koch snowflake at iteration 3, with minimum vertex and face numbers</p><pre class="codeinput">cubic_base_Koch_snowflake(3);
-</pre><img vspace="5" hspace="5" src="doc_01.png" alt=""> <h2 id="7">Example #2</h2><p>Computes and saves the cubic base 3D printable ready 3D Koch snowflake at iteration 3</p><pre class="codeinput">[V,T] = cubic_base_Koch_snowflake(4,true,false);
+      [ |  |  |]</pre><h2 id="6">Example #1</h2><p>Computes and displays the cube base 3D Koch snowflake at iteration 3, with minimum vertex and face numbers</p><pre class="codeinput">cube_base_Koch_snowflake(3);
+</pre><img vspace="5" hspace="5" src="doc_01.png" alt=""> <img vspace="5" hspace="5" src="doc_02.png" alt=""> <h2 id="7">Example #2</h2><p>Computes and saves the cube base 3D printable ready 3D Koch snowflake at iteration 3</p><pre class="codeinput">[V,T] = cube_base_Koch_snowflake(4,true,false);
 </pre><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2019b</a><br></p></div><!--
 ##### SOURCE BEGIN #####
-%% cubic_base_Koch_snowflake
+%% cube_base_Koch_snowflake
 %
-% Function to compute, display, and save the cubic base 
-% 3D Koch snowflake at any iteration / depth level.
+% Function to compute, display, and save the cube base 
+% 3D Koch snowflake at any iteration.
 %
-% Author & support : nicolas.douillet (at) free.fr, 2019-2020.
+% Author & support : nicolas.douillet (at) free.fr, 2019-2022.
 %
 %% Syntax
 %
-% cubic_base_Koch_snowflake;
+% cube_base_Koch_snowflake;
 % 
-% cubic_base_Koch_snowflake(nb_it);
+% cube_base_Koch_snowflake(nb_it);
 %
-% cubic_base_Koch_snowflake(nb_it, printable_ready);
+% cube_base_Koch_snowflake(nb_it, printable_ready);
 %
-% cubic_base_Koch_snowflake(nb_it, printable_ready, option_display);
+% cube_base_Koch_snowflake(nb_it, printable_ready, option_display);
 %
-% [V, T] = cubic_base_Koch_snowflake(nb_it, printable_ready, option_display);
+% [V, T] = cube_base_Koch_snowflake(nb_it, printable_ready, option_display);
 %
 %% Description
 %
-% cubic_base_Koch_snowflake computes and displays the 3-
-% cubic base 3D Koch snowflake included in the unit sphere.
+% cube_base_Koch_snowflake computes and displays the 3-
+% cube base 3D Koch snowflake included in the unit sphere.
 %
-% cubic_base_Koch_snowflake(nb_it) computes and displays the nb_it
-% cubic base 3D Koch snowflake included in the unit sphere.
+% cube_base_Koch_snowflake(nb_it) computes and displays the nb_it
+% cube base 3D Koch snowflake included in the unit sphere.
 %
-% cubic_base_Koch_snowflake(nb_it, printable_ready) prevents from
+% cube_base_Koch_snowflake(nb_it, printable_ready) prevents from
 % creating non manifold edges when printable_ready is set to true /
 % logical 1, and remove duplicated vertices and faces when it is set to
 % *false / logical 0. In this latter case, the model is lighter (less
 % vertices, less faces), but at the cost of non manifoldness.
 %
-% cubic_base_Koch_snowflake(nb_it, printable_ready, option_display)
+% cube_base_Koch_snowflake(nb_it, printable_ready, option_display)
 % displays it when option_display is set to logical *true/1 (default),
 % and doesn't when it is set to  logical false/0.
 %
-% [V,T] = cubic_base_Koch_snowflake(nb_it, printable_ready, option_display) saves
+% [V,T] = cube_base_Koch_snowflake(nb_it, printable_ready, option_display) saves
 % the resulting vertex coordinates in the array V, and the triangulation in the array T.
 %
 %% See also
 %
-% <https://fr.mathworks.com/matlabcentral/fileexchange/73247-n-level-3d-koch-snowflake Koch_snowflake> |
-% <https://fr.mathworks.com/matlabcentral/fileexchange/73447-n-level-3d-sierpinski-menger-sponge Sierpinski_Menger_sponge>
+% | <https://fr.mathworks.com/matlabcentral/fileexchange/73247-n-level-3d-koch-snowflake Koch_snowflake> |
+%   <https://fr.mathworks.com/matlabcentral/fileexchange/73447-n-level-3d-sierpinski-menger-sponge Sierpinski_Menger_sponge> |
 %
 %% Input arguments
 %
@@ -138,13 +138,13 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 %        [ |  |  |]
 %
 %% Example #1
-% Computes and displays the cubic base 3D Koch snowflake at iteration 3, with minimum vertex and face numbers
+% Computes and displays the cube base 3D Koch snowflake at iteration 3, with minimum vertex and face numbers
 
-cubic_base_Koch_snowflake(3);
+cube_base_Koch_snowflake(3);
 
 %% Example #2
-% Computes and saves the cubic base 3D printable ready 3D Koch snowflake at iteration 3
+% Computes and saves the cube base 3D printable ready 3D Koch snowflake at iteration 3
 
-[V,T] = cubic_base_Koch_snowflake(4,true,false);
+[V,T] = cube_base_Koch_snowflake(4,true,false);
 ##### SOURCE END #####
 --></body></html>

@@ -1,34 +1,34 @@
-function [V, T] = cubic_base_Koch_snowflake(nb_it, printable_ready, option_display)
-%% cubic_base_Koch_snowflake : function to compute, display, and save
-% the cubic base 3D Koch snowflake at any iteration / depth level.
+function [V, T] = cube_base_Koch_snowflake(nb_it, printable_ready, option_display)
+%% cube_base_Koch_snowflake : function to compute, display, and save
+% the cube base 3D Koch snowflake at any iteration.
 %
-% Author & support : nicolas.douillet (at) free.fr, 2019-2020.
+% Author & support : nicolas.douillet (at) free.fr, 2019-2022.
 %
 %
 % Syntax
 %
-% cubic_base_Koch_snowflake(nb_it);
-% cubic_base_Koch_snowflake(nb_it, printable_ready);
-% cubic_base_Koch_snowflake(nb_it, printable_ready, option_display);
-% [V, T] = cubic_base_Koch_snowflake(nb_it, printable_ready, option_display);
+% cube_base_Koch_snowflake(nb_it);
+% cube_base_Koch_snowflake(nb_it, printable_ready);
+% cube_base_Koch_snowflake(nb_it, printable_ready, option_display);
+% [V, T] = cube_base_Koch_snowflake(nb_it, printable_ready, option_display);
 %
 %
 % Description
 %
-% cubic_base_Koch_snowflake(nb_it) computes and displays the nb_it
-% cubic base 3D Koch snowflake included in the unit sphere.
+% cube_base_Koch_snowflake(nb_it) computes and displays the nb_it
+% cube base 3D Koch snowflake included in the unit sphere.
 %
-% cubic_base_Koch_snowflake(nb_it, printable_ready) prevents from
+% cube_base_Koch_snowflake(nb_it, printable_ready) prevents from
 % creating non manifold edges when printable_ready is set to true /
 % logical 1, and remove duplicated vertices and faces when it is set to
 % *false / logical 0. In this latter case, the model is lighter (less
 % vertices, less faces), but at the cost of non manifoldness.
 %
-% cubic_base_Koch_snowflake(nb_it, printable_ready, option_display)
+% cube_base_Koch_snowflake(nb_it, printable_ready, option_display)
 % displays it when option_display is set to logical *true/1 (default),
 % and doesn't when it is set to  logical false/0.
 %
-% [V,T] = cubic_base_Koch_snowflake(nb_it, printable_ready, option_display) saves
+% [V,T] = cube_base_Koch_snowflake(nb_it, printable_ready, option_display) saves
 % the resulting vertex coordinates in the array V, and the triangulation in the array T.
 %
 %
@@ -54,18 +54,18 @@ function [V, T] = cubic_base_Koch_snowflake(nb_it, printable_ready, option_displ
 %
 % Example #1
 %
-% Computes and displays the cubic base 3D Koch snowflake
+% Computes and displays the cube base 3D Koch snowflake
 % at iteration 3, with minimum vertex and face numbers
 %
-% cubic_base_Koch_snowflake(3);
+% cube_base_Koch_snowflake(3);
 %
 %
 % Example #2
 %
-% Computes and saves the cubic base 3D printable ready
+% Computes and saves the cube base 3D printable ready
 % 3D Koch snowflake at iteration 3
 %
-% [V,T] = cubic_base_Koch_snowflake(4,true,false);
+% [V,T] = cube_base_Koch_snowflake(4,true,false);
 
 
 %% Input parsing
@@ -167,7 +167,7 @@ if option_display
     
 end
 
-end % cubic_base_Koch_snowflake
+end % cube_base_Koch_snowflake
 
 
 %% Cube structure computation subfunction

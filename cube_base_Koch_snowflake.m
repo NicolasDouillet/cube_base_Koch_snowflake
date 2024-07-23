@@ -2,7 +2,7 @@ function [V, T] = cube_base_Koch_snowflake(nb_it, printable_ready, option_displa
 %% cube_base_Koch_snowflake : function to compute, display, and save
 % the cube base 3D Koch snowflake at any iteration.
 %
-% Author & support : nicolas.douillet (at) free.fr, 2019-2022.
+% Author : nicolas.douillet9 (at) gmail.com, 2019-2024.
 %
 %
 % Syntax
@@ -431,7 +431,7 @@ end % split_cube
 %% Squares to triangles conversion subfunction
 function [V, T] = squares2triangles(C)
 %
-% Author & support : nicolas.douillet (at) free.fr, 2017-2020.
+% Author : nicolas.douillet9 (at) gmail.com, 2017-2024.
 %
 % Split struct array into two arrays : vertices & facets
 
@@ -474,7 +474,7 @@ end % squares2triangles
 %% Display subfunction
 function [] = disp_Koch_snowflake(V, T, cmap)
 %
-% Author & support : nicolas.douillet (at) free.fr, 2017-2020.
+% Author : nicolas.douillet9 (at) gmail.com, 2017-2024.
 
 figure;
 set(gcf,'Color',[0 0 0]), set(gca,'Color',[0 0 0]);

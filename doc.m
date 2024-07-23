@@ -3,7 +3,7 @@
 % Function to compute, display, and save the cube base 
 % 3D Koch snowflake at any iteration.
 %
-% Author & support : nicolas.douillet (at) free.fr, 2019-2022.
+% Author : nicolas.douillet9 (at) gmail.com, 2019-2024.
 %
 %% Syntax
 %
